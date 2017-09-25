@@ -1,0 +1,43 @@
+﻿<Window x:Class="IntegerCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IntegerCalculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid HorizontalAlignment="Center"
+          VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="8" />
+            <ColumnDefinition Width="80" />
+            <ColumnDefinition Width="8" />
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="8" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="8" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="8" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="Zahl1:" />
+        <TextBox Grid.Column="2" Grid.Row="0" Name="Zahl1TextBox" />
+
+        <TextBlock Grid.Column="0" Grid.Row="2" Text="Zahl1:" />
+        <TextBox Grid.Column="2" Grid.Row="2" Name="Zahl2TextBox" />
+
+        <TextBlock Grid.Column="0" Grid.Row="4" Text="Ergebnis:" />
+        <TextBox Grid.Column="2" Grid.Row="4" Name="ErgebnisTextBox" IsEnabled="False" />
+
+        <Button Content="+" Grid.Column="4" Grid.Row="0" Click="PlusButtonClick" />
+        <Button Content="-" Grid.Column="6" Grid.Row="0" Click="MinusButtonClick" />
+        <Button Content="*" Grid.Column="4" Grid.Row="2" Click="MalButtonClick" />
+        <Button Content="/" Grid.Column="6" Grid.Row="2" Click="DividiertButtonClick" />
+        <Button Content="%" Grid.Column="4" Grid.Row="4" Click="ModuloButtonClick" />
+    </Grid>
+</Window>
