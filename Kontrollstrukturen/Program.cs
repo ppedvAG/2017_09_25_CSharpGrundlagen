@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Kontrollstrukturen
 {
@@ -66,13 +67,27 @@ namespace Kontrollstrukturen
             //while (eingabe < 100);
             #endregion
 
-            for(int i = 100; i > 0; i--)
-            {
-                Console.WriteLine($"mein Text {i} anderer Text");   // string Interpolation -> ab 2015
-            }
-            // for  
-            // forr
+            #region For
+            //for(int i = 100; i > 0; i--)
+            //{
+            //    Console.WriteLine($"mein Text {i} anderer Text");   // string Interpolation -> ab 2015
+            //}
+            //// for  
+            //// forr
+            #endregion
 
+            var mitarbeiter = new List<string>
+            {
+                "Franz",
+                "Lisa",
+                "Alex",
+                "Maria"
+            };
+
+            foreach (var m in mitarbeiter)
+            {
+                Console.WriteLine(m);
+            }
 
             Console.ReadKey();
         }
