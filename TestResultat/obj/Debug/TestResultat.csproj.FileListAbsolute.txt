@@ -1,0 +1,7 @@
+c:\users\jw2\documents\visual studio 2017\Projects\2017_09_25_CSharpGrundlagen\TestResultat\bin\Debug\TestResultat.exe.config
+c:\users\jw2\documents\visual studio 2017\Projects\2017_09_25_CSharpGrundlagen\TestResultat\bin\Debug\TestResultat.exe
+c:\users\jw2\documents\visual studio 2017\Projects\2017_09_25_CSharpGrundlagen\TestResultat\bin\Debug\TestResultat.pdb
+c:\users\jw2\documents\visual studio 2017\Projects\2017_09_25_CSharpGrundlagen\TestResultat\obj\Debug\TestResultat.csproj.CoreCompileInputs.cache
+c:\users\jw2\documents\visual studio 2017\Projects\2017_09_25_CSharpGrundlagen\TestResultat\obj\Debug\TestResultat.exe
+c:\users\jw2\documents\visual studio 2017\Projects\2017_09_25_CSharpGrundlagen\TestResultat\obj\Debug\TestResultat.pdb
+c:\users\jw2\documents\visual studio 2017\Projects\2017_09_25_CSharpGrundlagen\TestResultat\obj\Debug\TestResultat.csprojResolveAssemblyReference.cache
