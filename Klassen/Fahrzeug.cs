@@ -1,4 +1,6 @@
-﻿namespace Klassen
+﻿using System;
+
+namespace Klassen
 {
     internal class Fahrzeug
     {
@@ -50,6 +52,17 @@
                         farbe = "Ungültig";
                         break;
                 }
+            }
+        }
+
+        private int baujahr;
+        public int Baujahr
+        {
+            get { return baujahr; }
+            set
+            {
+                if(value >= 1886 && value < DateTime.Now.Year)
+                baujahr = value;
             }
         }
 

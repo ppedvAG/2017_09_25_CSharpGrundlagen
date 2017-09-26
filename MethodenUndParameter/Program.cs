@@ -30,7 +30,6 @@ namespace MethodenUndParameter
             int andereZahl;
             var x = OutParameter(out zahl, out andereZahl);
             Console.WriteLine(zahl);
-            
         }
 
         private static int Addieren(int zahl1, int zahl2)

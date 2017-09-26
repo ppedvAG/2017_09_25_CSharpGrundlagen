@@ -35,6 +35,9 @@ namespace HalloCSharp
             zahl = 13 / 5;  // = 2
             zahl = 14 % 5;  // 4
 
+            zahl = zahl + 6;
+            zahl += 6;
+
             // Vergleichsoperatoren
             bedingung = 7 < 9;
             bedingung = 7 <= 9;
@@ -42,6 +45,7 @@ namespace HalloCSharp
             bedingung = 7 >= 9;
             bedingung = 7 == 9;
             bedingung = 7 != 9;
+            bedingung = !bedingung;
 
             // Verknüpfungsoperatoren
             bedingung = 7 < 9 & 7 > 8;
@@ -51,7 +55,6 @@ namespace HalloCSharp
             bedingung = 7 < 9 || 7 > 8;
 
             bedingung = 7 < 9 ^ 7 > 8;
-            
 
             string input = Console.ReadLine();
 

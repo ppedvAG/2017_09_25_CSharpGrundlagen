@@ -68,7 +68,8 @@ namespace Kontrollstrukturen
             #endregion
 
             #region For
-            //for(int i = 100; i > 0; i--)
+
+            //for (int i = 100; i > 0; i--)
             //{
             //    Console.WriteLine($"mein Text {i} anderer Text");   // string Interpolation -> ab 2015
             //}
