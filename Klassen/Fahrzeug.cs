@@ -15,7 +15,7 @@ namespace Klassen
             {
                 if (value > 200)
                     value = 200;
-                 
+
                 geschwindigkeit = value;
             }
         }
@@ -61,10 +61,38 @@ namespace Klassen
             get { return baujahr; }
             set
             {
-                if(value >= 1886 && value < DateTime.Now.Year)
-                baujahr = value;
+                if (value >= 1886 && value < DateTime.Now.Year)
+                    baujahr = value;
             }
         }
 
+        public void Bremsen(int dV)
+        {
+            Geschwindigkeit -= dV;
+        }
+
+
+        public void Beschleunigen(int dV)
+        {
+            Geschwindigkeit += dV;
+        }
+
+        /// <summary>
+        /// Beschleunigt das Fahrzeug um den übergenen Faktor.
+        /// </summary>
+        /// <param name="faktor">Die Geschwindigkeitsänderung.</param>
+        public void Beschleunigen(double faktor)
+        {
+            Geschwindigkeit = (int)(Geschwindigkeit * faktor);
+        }
+        public void Beschleunigen(int dV, int zahl)
+        {
+        }
+        public void Beschleunigen(double dV, int zahl)
+        {
+        }
+        public void Beschleunigen(int wert, double dV)
+        {
+        }
     }
 }
