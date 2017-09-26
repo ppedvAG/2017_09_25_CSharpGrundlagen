@@ -11,5 +11,6 @@
             get { return maxLadung; }
             set { maxLadung = value; }
         }
+        
     }
 }

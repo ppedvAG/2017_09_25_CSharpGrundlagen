@@ -25,9 +25,18 @@ namespace Vererbung
 
             var c = new Cabrio("Rosa");
 
-            Console.WriteLine(c.Geschwindigkeit);
+            Lackieren(f);
+            Lackieren(pkw);
+            Lackieren(lkw);
+            Lackieren(c);
+            Console.WriteLine(f.Farbe);
 
             Console.ReadKey();
+        }
+
+        private static void Lackieren(Fahrzeug f)
+        {
+            f.Farbe = "Lila";
         }
     }
 }

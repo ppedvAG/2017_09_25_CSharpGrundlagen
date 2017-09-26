@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vererbung", "Vererbung\Vere
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WertUndReferenztypen", "WertUndReferenztypen\WertUndReferenztypen.csproj", "{AA45F4ED-3FB9-4462-A01D-A3A0F511ED5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ÜberschreibenUndVerbergen", "ÜberschreibenUndVerbergen\ÜberschreibenUndVerbergen.csproj", "{37C16985-E5D0-4E7E-A485-6C6C45B36EE1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{AA45F4ED-3FB9-4462-A01D-A3A0F511ED5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA45F4ED-3FB9-4462-A01D-A3A0F511ED5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA45F4ED-3FB9-4462-A01D-A3A0F511ED5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37C16985-E5D0-4E7E-A485-6C6C45B36EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37C16985-E5D0-4E7E-A485-6C6C45B36EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37C16985-E5D0-4E7E-A485-6C6C45B36EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37C16985-E5D0-4E7E-A485-6C6C45B36EE1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

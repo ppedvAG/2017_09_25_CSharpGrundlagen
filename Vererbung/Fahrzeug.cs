@@ -12,18 +12,18 @@ namespace Vererbung
         {
             Geschwindigkeit = geschwindigkeit;
         }
-        public Fahrzeug(string farbe, int geschwindigkeit) 
+        public Fahrzeug(string farbe, int geschwindigkeit)
             : this(farbe)
         {
             Geschwindigkeit = geschwindigkeit;
         }
         public Fahrzeug(string farbe, int geschwindigkeit, int baujahr)
-            :this(farbe, geschwindigkeit)
+            : this(farbe, geschwindigkeit)
         {
             Baujahr = baujahr;
         }
 
-        private int geschwindigkeit;  
+        private int geschwindigkeit;
         public int Geschwindigkeit
         {
             get
@@ -45,18 +45,7 @@ namespace Vererbung
             get { return farbe; }
             set
             {
-                switch (value)
-                {
-                    case "Rot":
-                    case "Blau":
-                    case "Grün":
-                    case "Gelb":
-                        farbe = value;
-                        break;
-                    default:
-                        farbe = "Ungültig";
-                        break;
-                }
+                farbe = value;
             }
         }
 
