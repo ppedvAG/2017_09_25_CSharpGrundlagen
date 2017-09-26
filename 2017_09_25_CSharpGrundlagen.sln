@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Primzahlen", "Primzahlen\Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vererbung", "Vererbung\Vererbung.csproj", "{BF4EC413-A144-4182-857A-C9534C9C1C36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WertUndReferenztypen", "WertUndReferenztypen\WertUndReferenztypen.csproj", "{AA45F4ED-3FB9-4462-A01D-A3A0F511ED5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{BF4EC413-A144-4182-857A-C9534C9C1C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF4EC413-A144-4182-857A-C9534C9C1C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF4EC413-A144-4182-857A-C9534C9C1C36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA45F4ED-3FB9-4462-A01D-A3A0F511ED5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA45F4ED-3FB9-4462-A01D-A3A0F511ED5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA45F4ED-3FB9-4462-A01D-A3A0F511ED5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA45F4ED-3FB9-4462-A01D-A3A0F511ED5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
