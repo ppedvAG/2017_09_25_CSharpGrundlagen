@@ -26,6 +26,7 @@ namespace Primzahlen
         {
             if (value < 2)
                 return false;
+
             if (value == 2)
                 return true;
 
