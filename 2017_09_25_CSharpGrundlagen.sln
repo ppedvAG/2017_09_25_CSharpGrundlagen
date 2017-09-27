@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strukturen", "Strukturen\St
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatischeMemberUndKlassen", "StatischeMemberUndKlassen\StatischeMemberUndKlassen.csproj", "{EDBC6494-9B64-4DE9-9A46-E93270CB1FB0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorenÜberladen", "OperatorenÜberladen\OperatorenÜberladen.csproj", "{5C079065-D15A-49EC-8F5B-F9BBE84B1823}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{EDBC6494-9B64-4DE9-9A46-E93270CB1FB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDBC6494-9B64-4DE9-9A46-E93270CB1FB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDBC6494-9B64-4DE9-9A46-E93270CB1FB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C079065-D15A-49EC-8F5B-F9BBE84B1823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C079065-D15A-49EC-8F5B-F9BBE84B1823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C079065-D15A-49EC-8F5B-F9BBE84B1823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C079065-D15A-49EC-8F5B-F9BBE84B1823}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
