@@ -41,6 +41,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatischeMemberUndKlassen",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorenÜberladen", "OperatorenÜberladen\OperatorenÜberladen.csproj", "{5C079065-D15A-49EC-8F5B-F9BBE84B1823}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloDelegates", "HalloDelegates\HalloDelegates.csproj", "{FE645E2F-4C5C-48A8-87E4-7350B45DDA6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesInPraxis", "DelegatesInPraxis\DelegatesInPraxis.csproj", "{C744E4D0-C797-4F6A-9C6E-53846729CAA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +127,14 @@ Global
 		{5C079065-D15A-49EC-8F5B-F9BBE84B1823}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C079065-D15A-49EC-8F5B-F9BBE84B1823}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C079065-D15A-49EC-8F5B-F9BBE84B1823}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE645E2F-4C5C-48A8-87E4-7350B45DDA6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE645E2F-4C5C-48A8-87E4-7350B45DDA6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE645E2F-4C5C-48A8-87E4-7350B45DDA6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE645E2F-4C5C-48A8-87E4-7350B45DDA6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C744E4D0-C797-4F6A-9C6E-53846729CAA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C744E4D0-C797-4F6A-9C6E-53846729CAA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C744E4D0-C797-4F6A-9C6E-53846729CAA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C744E4D0-C797-4F6A-9C6E-53846729CAA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
