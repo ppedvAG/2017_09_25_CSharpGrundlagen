@@ -13,7 +13,7 @@ namespace ÜberschreibenUndVerbergen
             var l = new Linie();
             l.Farbe = "Rot";
             l.Länge = 7;
-            int x = l.Zeichnen();
+            l.Zeichnen();
 
             var k = new Kreis();
             k.Farbe = "Grün";

@@ -2,7 +2,7 @@
 
 namespace AbstrakteKlassen
 {
-    public abstract class Grafik
+    public abstract class Grafik        // in VB: abstract = mustinherit
     {
         public ConsoleColor Farbe { get; set; }
         public double Breite { get; set; }
@@ -13,8 +13,11 @@ namespace AbstrakteKlassen
             Farbe = farbe;
         }
 
-        public abstract void Zeichnen();
+        public abstract void Zeichnen();        // inVB: abstract = mustoverride
 
-
+        public void Rendern()
+        {
+            // die Logik fürs Rendern
+        }
     }
 }

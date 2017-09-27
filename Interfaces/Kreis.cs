@@ -1,8 +1,12 @@
 ﻿namespace Interfaces
 {
-    public class Kreis : ILackierbar
+    public class Kreis : Grafik
     {
-        public string Farbe { get; set; }
         public double Radius { get; set; }
+
+        public override void Zeichnen()
+        {
+            System.Console.WriteLine("O");
+        }
     }
 }

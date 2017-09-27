@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Vererbung
 {
@@ -30,6 +31,17 @@ namespace Vererbung
             Lackieren(lkw);
             Lackieren(c);
             Console.WriteLine(f.Farbe);
+
+            var fahrzeuge = new List<Fahrzeug>();
+            fahrzeuge.Add(f);
+            fahrzeuge.Add(pkw);
+            fahrzeuge.Add(lkw);
+            fahrzeuge.Add(c);
+
+            foreach (var fahrzeug in fahrzeuge)
+            {
+                Console.WriteLine(fahrzeug.Farbe);
+            }
 
             Console.ReadKey();
         }

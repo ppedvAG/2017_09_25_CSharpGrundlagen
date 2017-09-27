@@ -4,6 +4,10 @@ namespace Vererbung
 {
     internal class Fahrzeug
     {
+        public Fahrzeug(string farbe, int geschwindigkeit) : this(farbe)
+        {
+            Geschwindigkeit = geschwindigkeit;
+        }
         public Fahrzeug(string farbe)
         {
             Farbe = farbe;
@@ -12,11 +16,7 @@ namespace Vererbung
         {
             Geschwindigkeit = geschwindigkeit;
         }
-        public Fahrzeug(string farbe, int geschwindigkeit)
-            : this(farbe)
-        {
-            Geschwindigkeit = geschwindigkeit;
-        }
+       
         public Fahrzeug(string farbe, int geschwindigkeit, int baujahr)
             : this(farbe, geschwindigkeit)
         {

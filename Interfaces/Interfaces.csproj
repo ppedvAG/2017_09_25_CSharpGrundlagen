@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fahrzeug.cs" />
+    <Compile Include="Grafik.cs" />
     <Compile Include="ILackierbar.cs" />
     <Compile Include="Kreis.cs" />
     <Compile Include="Program.cs" />
