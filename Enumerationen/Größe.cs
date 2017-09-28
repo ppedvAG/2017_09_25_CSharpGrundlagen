@@ -1,6 +1,6 @@
 ﻿namespace Enumerationen
 {
-    internal enum Größe
+    internal enum Größe : short
     {
         Klein = 5,
         Mittel = 10,

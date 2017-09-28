@@ -5,3 +5,10 @@ c:\users\jw2\documents\visual studio 2017\Projects\2017_09_25_CSharpGrundlagen\T
 c:\users\jw2\documents\visual studio 2017\Projects\2017_09_25_CSharpGrundlagen\TestResultat\obj\Debug\TestResultat.exe
 c:\users\jw2\documents\visual studio 2017\Projects\2017_09_25_CSharpGrundlagen\TestResultat\obj\Debug\TestResultat.pdb
 c:\users\jw2\documents\visual studio 2017\Projects\2017_09_25_CSharpGrundlagen\TestResultat\obj\Debug\TestResultat.csprojResolveAssemblyReference.cache
+C:\Kurse\C# Grundlagen\2017_09_25_CSharpGrundlagen\TestResultat\bin\Debug\TestResultat.exe.config
+C:\Kurse\C# Grundlagen\2017_09_25_CSharpGrundlagen\TestResultat\bin\Debug\TestResultat.exe
+C:\Kurse\C# Grundlagen\2017_09_25_CSharpGrundlagen\TestResultat\bin\Debug\TestResultat.pdb
+C:\Kurse\C# Grundlagen\2017_09_25_CSharpGrundlagen\TestResultat\obj\Debug\TestResultat.csprojResolveAssemblyReference.cache
+C:\Kurse\C# Grundlagen\2017_09_25_CSharpGrundlagen\TestResultat\obj\Debug\TestResultat.csproj.CoreCompileInputs.cache
+C:\Kurse\C# Grundlagen\2017_09_25_CSharpGrundlagen\TestResultat\obj\Debug\TestResultat.exe
+C:\Kurse\C# Grundlagen\2017_09_25_CSharpGrundlagen\TestResultat\obj\Debug\TestResultat.pdb

@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloDelegates", "HalloDele
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegatesInPraxis", "DelegatesInPraxis\DelegatesInPraxis.csproj", "{C744E4D0-C797-4F6A-9C6E-53846729CAA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HalloLinq", "HalloLinq\HalloLinq.csproj", "{527E754D-5A47-4C8E-96BF-A121913CDDD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{C744E4D0-C797-4F6A-9C6E-53846729CAA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C744E4D0-C797-4F6A-9C6E-53846729CAA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C744E4D0-C797-4F6A-9C6E-53846729CAA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{527E754D-5A47-4C8E-96BF-A121913CDDD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{527E754D-5A47-4C8E-96BF-A121913CDDD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{527E754D-5A47-4C8E-96BF-A121913CDDD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{527E754D-5A47-4C8E-96BF-A121913CDDD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

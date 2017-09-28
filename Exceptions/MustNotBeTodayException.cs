@@ -10,5 +10,13 @@ namespace Exceptions
         }
 
         public int ForbiddenNumber { get; }
+
+        public override string Message
+        {
+            get
+            {
+                return base.Message;
+            }
+        }
     }
 }

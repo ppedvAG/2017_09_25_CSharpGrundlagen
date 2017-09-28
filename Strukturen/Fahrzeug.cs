@@ -20,5 +20,10 @@ namespace Strukturen
 
         public void Dispose()
         { /* Das Fahrzeug zerstören. */ }
+
+        public override string ToString()
+        {
+            return "Ein Fahrzeug.";
+        }
     }
 }

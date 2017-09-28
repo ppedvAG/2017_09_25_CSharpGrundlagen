@@ -7,6 +7,8 @@ namespace Enumerationen
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(Wochentage.Mittwoch);
+
             DialogResult result;
             do
             {

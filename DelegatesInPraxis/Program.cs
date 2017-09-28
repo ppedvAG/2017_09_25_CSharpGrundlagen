@@ -35,12 +35,12 @@ namespace DelegatesInPraxis
 
             //var query = Abfrage(employees, (e) =>
             //{
-            //    return e.Experience < 5;
+            //    return e.Experience < 5 && e.Experience > 2;
             //});
 
             var query = Abfrage(employees, (e) => e.Experience < 5);
 
-            var linq = employees.Where(e => e.Experience > 5);
+            var linqQuery = employees.Where(e => e.Experience > 5);
             
             foreach (var e in query)
                 Console.WriteLine($"Id: {e.Id,2} | {e.Name,-10} | {e.Experience}");
@@ -50,7 +50,7 @@ namespace DelegatesInPraxis
 
         private static bool Bedingung(Employee e)
         {
-            return e.Name.StartsWith("s", StringComparison.InvariantCultureIgnoreCase);
+            return e.Name.Length > 4;
         }
 
         private static IEnumerable<Employee> Abfrage(
@@ -65,9 +65,6 @@ namespace DelegatesInPraxis
 
             return query;
         }
-
-
-
 
         private static IEnumerable<Employee> GetData()
         {
