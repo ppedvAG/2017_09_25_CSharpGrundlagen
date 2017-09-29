@@ -8,6 +8,7 @@ namespace Vererbung
         static void Main(string[] args)
         {
             var f = new Fahrzeug("Blau");
+
             var f2 = new Fahrzeug("Rot", 50);
 
             var pkw = new Pkw("Blau");
