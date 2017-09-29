@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace ObserverUndEvents
 {
+    internal delegate void TemperaturGeändertHandler(int neueTemperatur);
     internal class Sensor
     {
         //private Heizung heizung;

@@ -6,7 +6,7 @@ using Tynamix.ObjectFiller;
 
 namespace HalloLinq.Data
 {
-    internal class DataService
+    internal class DataService : IDataService
     {
         private IEnumerable<Company> _companies;
         private IEnumerable<Employee> _employees;

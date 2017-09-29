@@ -1,5 +1,6 @@
 ﻿using HalloLinq.Data;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace HalloLinq
@@ -8,7 +9,7 @@ namespace HalloLinq
     {
         static void Main(string[] args)
         {
-            var dataService = new DataService();
+            IDataService dataService = new DataService();
 
             var employees = dataService.GetAllEmployees();
             var companies = dataService.GetAllCompanies();
@@ -21,7 +22,8 @@ namespace HalloLinq
             //            select e;
 
             // Fluid API
-            //var query = employees.Where(e => e.Firstname[0] > 'V');
+            //var query = employees
+            //    .Where(e => e.Firstname[0] > 'V');
 
             #endregion
             #region Ordering
@@ -32,13 +34,17 @@ namespace HalloLinq
             //            select e;
 
             // Fluid API
-            //var query = employees.OrderBy(e => e.Firstname).ThenByDescending(e => e.Lastname);
+            //var query = employees
+            //    .OrderBy(e => e.Firstname)
+            //    .ThenByDescending(e => e.Lastname);
 
             #endregion
             #region Projection
 
             // Linq Syntax
             //var query = from e in employees
+            //                //select new ProjectionExample() { Vorname = e.Firstname };
+            //                //select e;
             //            select new { Vorname = e.Firstname, Nachname = e.Lastname };
 
             // Fluid API
@@ -62,7 +68,7 @@ namespace HalloLinq
             #endregion
             #region Partitioning
 
-            //var query = employees.OrderBy(e => e.Id).Skip(20).Take(20);
+            //var query = employees.OrderBy(e => e.Id).Skip(60).Take(20);
 
             #endregion
             #region Element Operators
@@ -176,7 +182,7 @@ namespace HalloLinq
             #endregion
 
             foreach (var item in whatever)
-                Console.WriteLine($"{item.CompanyName, -15} | {item.Firstname,-15} | {item.Lastname}");
+                Console.WriteLine($"{item.CompanyName,-15} | {item.Firstname,-15} | {item.Lastname}");
 
             Console.WriteLine(whatever.LongCount());
 

@@ -40,11 +40,15 @@ namespace DelegatesInPraxis
 
             var query = Abfrage(employees, (e) => e.Experience < 5);
 
+            var ext = employees.Abfrage(e => e.Experience > 5);
+            var namen = new[] { "Hans", "Peter", "Sepp" };
+            namen.Abfrage(n => n.Length > 4);
+
             var linqQuery = employees.Where(e => e.Experience > 5);
-            
+
             foreach (var e in query)
                 Console.WriteLine($"Id: {e.Id,2} | {e.Name,-10} | {e.Experience}");
-            
+
             Console.ReadKey();
         }
 
@@ -54,7 +58,7 @@ namespace DelegatesInPraxis
         }
 
         private static IEnumerable<Employee> Abfrage(
-            IEnumerable<Employee> employees, 
+            IEnumerable<Employee> employees,
             Func<Employee, bool> predicate)
         {
             var query = new List<Employee>();
@@ -80,6 +84,22 @@ namespace DelegatesInPraxis
                 new Employee { Id = 8, Name = "Max", Experience = 8},
                 new Employee { Id = 9, Name = "Luise", Experience = 2}
             };
+        }
+    }
+
+    internal static class IEnumerableExtensions
+    {
+        public static IEnumerable<T> Abfrage<T>(
+            this IEnumerable<T> source,
+            Func<T, bool> predicate)
+        {
+            var query = new List<T>();
+
+            foreach (var e in source)
+                if (predicate(e))
+                    query.Add(e);
+
+            return query;
         }
     }
 }

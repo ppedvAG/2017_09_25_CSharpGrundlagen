@@ -18,8 +18,8 @@ namespace ObserverUndEvents
             //sensor.Subscribe(heizung1);
             //sensor.Subscribe(heizung2);
             //sensor.Subscribe(heizung3);
-            ////sensor.Subscribe(kühlung);
-            sensor.TemperaturGeändert += new Action<int>(heizung.NeueTemperatur);
+            //sensor.Subscribe(kühlung);
+            sensor.TemperaturGeändert += new Action<int>(heizung.NeueTemperatur);   // Subscribe
             sensor.TemperaturGeändert += kühlung.NeueTemperatur;
             sensor.TemperaturGeändert += Display;
             Action<int> dis = t => Console.WriteLine($"{t}°C");
@@ -31,7 +31,7 @@ namespace ObserverUndEvents
             Console.WriteLine("Es wurden 40° gemessen!");
             sensor.TemperaturGeändert += Display;
 
-
+            sensor.TemperaturGeändert -= kühlung.NeueTemperatur;        // Unsubscribe
 
             // einige Zeit später
             Console.WriteLine();
