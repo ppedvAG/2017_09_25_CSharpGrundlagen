@@ -115,5 +115,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TextEditor.Files\TextEditor.Files.csproj">
+      <Project>{84c93f09-c174-4cf3-8e59-ea2711e2ff43}</Project>
+      <Name>TextEditor.Files</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
-using System.IO;
+using System;
 using System.Windows;
+using TextEditor.Files;
 using TextEditor.Properties;
 
 namespace TextEditor
@@ -10,21 +11,28 @@ namespace TextEditor
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        private readonly IFileManager fileManager;
+
+        public MainWindow(IFileManager manager)
         {
+            if (manager == null)
+                throw new ArgumentNullException();
+
             InitializeComponent();
             ReadUserSettings();
 
             Title = "Mein Text Editor.";
+
+            fileManager = manager;
         }
 
-        private void OpenButton_Click(object sender, RoutedEventArgs e)
+        private async void OpenButton_Click(object sender, RoutedEventArgs e)
         {
             var path = GetFileOpenPath();
             if (path == null)
                 return;
 
-            var content = GetAllText(path);
+            var content = await fileManager.GetAllText(path);
             contentTextBox.Text = content;
         }
 
@@ -35,25 +43,7 @@ namespace TextEditor
                 return;
 
             var content = contentTextBox.Text;
-            SaveAllText(path, content);
-        }
-
-        private string GetAllText(string path)
-        {
-            //return File.ReadAllText(path);
-
-            using (var fs = new FileStream(path, FileMode.Open, FileAccess.Read))
-            using (var sr = new StreamReader(fs))
-                return sr.ReadToEnd();
-        }
-
-        private void SaveAllText(string path, string text)
-        {
-            //return File.WriteAllText(path, text);
-
-            using (var fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Write))
-            using (var sw = new StreamWriter(fs))
-                sw.Write(text);
+            fileManager.SaveAllText(path, content);
         }
 
         private string GetFileSavePath()
