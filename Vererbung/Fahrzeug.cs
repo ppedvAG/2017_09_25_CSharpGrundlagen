@@ -2,7 +2,7 @@
 
 namespace Vererbung
 {
-    internal class Fahrzeug
+    internal class Fahrzeug : IDisposable
     {
         public Fahrzeug(string farbe, int geschwindigkeit) : this(farbe)
         {
@@ -77,6 +77,11 @@ namespace Vererbung
         public void Beschleunigen(double faktor)
         {
             Geschwindigkeit = (int)(Geschwindigkeit * faktor);
+        }
+
+        public void Dispose()
+        {
+            
         }
 
         private Motor motor;

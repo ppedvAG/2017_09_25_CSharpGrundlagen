@@ -1,0 +1,58 @@
+﻿<Window x:Class="TextEditor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextEditor"
+        mc:Ignorable="d"
+        Height="350" Width="525"
+        SizeChanged="WindowSize_Changed">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Open" Click="OpenButton_Click" />
+                <MenuItem Header="Save" Click="SaveButton_Click" />
+                <Separator />
+                <MenuItem Header="Exit" Click="Exit_Click" InputGestureText="Alt+F4" />
+            </MenuItem>
+            <MenuItem Header="Edit">
+                <MenuItem Command="Copy" />
+                <MenuItem Command="Cut" />
+                <MenuItem Command="Paste" />
+            </MenuItem>
+        </Menu>
+        
+        <ToolBar Grid.Row="1">
+            <Button Content="Copy" Command="Copy" />
+            <Button Content="Cut" Command="Cut" />
+            <Button Content="Paste" Command="Paste" />
+        </ToolBar>
+
+        <TextBox Grid.Row="2"
+                 Name="contentTextBox"
+                 AcceptsReturn="True"
+                 AcceptsTab="True"
+                 TextWrapping="Wrap"/>
+
+        <StackPanel Grid.Row="3"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="8">
+
+            <Button Content="Open" 
+                    Click="OpenButton_Click" />
+
+            <Button Content="Save" 
+                    Click="SaveButton_Click"
+                    Margin="8 0 0 0"/>
+        </StackPanel>
+    </Grid>
+</Window>

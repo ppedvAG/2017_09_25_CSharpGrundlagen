@@ -51,6 +51,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverUndEvents", "Observ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "ExtensionMethods\ExtensionMethods.csproj", "{F62C2C7E-52D2-4A9C-83F7-F7C7AAEF10D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextEditor", "TextEditor\TextEditor.csproj", "{20B9DDD1-95F2-4749-BF47-149BBC2DF3FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +155,10 @@ Global
 		{F62C2C7E-52D2-4A9C-83F7-F7C7AAEF10D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F62C2C7E-52D2-4A9C-83F7-F7C7AAEF10D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F62C2C7E-52D2-4A9C-83F7-F7C7AAEF10D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20B9DDD1-95F2-4749-BF47-149BBC2DF3FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20B9DDD1-95F2-4749-BF47-149BBC2DF3FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20B9DDD1-95F2-4749-BF47-149BBC2DF3FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20B9DDD1-95F2-4749-BF47-149BBC2DF3FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
